@@ -1,6 +1,6 @@
-<img src="header.svg?2" width="800" height="400" alt="Click to see the source">
+<img src="header.svg" width="800" height="400" alt="Click to see the source">
 
-![Version](header.svg?2)
+![Version](header.svg)
 
 <br>
 <br>
